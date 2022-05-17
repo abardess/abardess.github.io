@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher Bardessono</title>
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel = "stylesheet" href = "style.css" type = "text/css">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+	<img class="icon" src="images/icon.png" alt="A black circle with two obtuse triangles inscribed inside it."/>
+	<a href="index.html">About</a>
+	<a class ="active" href="resources.html">Resources</a>
+	<a href="classes.html">Classes</a>
+</div>
+
+<div class = "row">
+	<div>
+	<h2>Student Work</h2>
+	
+	TBD
+	
+	<h2>Sample Lessons</h2>
+	<div class="container">
+		<button onclick="openPDF(0)"><h4>Camera Lenses</h4></button>
+		<button onclick="openPDF(1)"><h4>Reading on Waves</h4></button>
+		<button onclick="openPDF(2)"><h4>Waves on Slinky Inquiry</h4></button>
+		<button onclick="openPDF(3)"><h4>Waves Unit Final Project</h3></button>
+	</div>
+	
+	
+	<div class = "slide">
+		Two shorter inquiry activities into the basics of how lenses work. With some great artistic opportunities!
+	</div>
+	
+	<div class = "slide">
+		A reading I gave at the start of our unit on waves in a physics class. Students annotated and used it as references as we did further inquiries.
+	</div>
+	
+	<div class = "slide">
+		Another inquiry activity, this time on making measurements of basic wave behavior on slinkies.
+	</div>
+	
+	<div class = "slide">
+		The final project I assigned to my students during my student teaching. They built research projects about a specific technology that uses waves.
+		(Fufills NGSS <a href = "https://www.nextgenscience.org/pe/hs-ps4-5-waves-and-their-applications-technologies-information-transfer">HS-PS4-5</a>)
+	</div>
+	
+	
+	
+	
+	<div class = "viewer">
+		<object
+			id = "pdf_view1"
+			data = "documents/phones_inquiry.pdf"
+			type = "application/pdf"
+			width = "600px"
+			height = "600px"
+		>
+			<iframe
+				id = "pdf_view2"
+				src = "documents/phones_inquiry.pdf"
+				width = "500px"
+				height = "800px"
+			>
+		
+			</iframe>
+		</object>
+	</div>
+	
+	</div>
+	
+</div>
+
+
+
+<script>
+var doc_list = ["documents/phones_inquiry.pdf", "documents/waves_anatomy.pdf", "documents/waves_inquiry.pdf", "documents/waves_final.pdf"];
+openPDF(0);
+
+function openPDF(n) {
+	document.getElementById("pdf_view1").data = doc_list[n];
+	document.getElementById("pdf_view2").src = doc_list[n];
+	showDiv(n+1)
+}
+
+function showDiv(n) {
+	var i;
+	var x = document.getElementsByClassName("slide");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	x[n-1].style.display = "block";
+}
+
+
+</script>
+
+</body>
+</html>

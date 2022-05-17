@@ -1,59 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Anthony Bardessono</title>
+<title>Teacher Bardessono</title>
 <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-<link href = "style.css" type = "text/css" rel = "stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel = "stylesheet" href = "style.css" type = "text/css">
+
+<style>
+.slide {display:none;}
+</style>
+
 </head>
 
 <body>
 
 
-
 <div class="container">
 	<img class="icon" src="images/icon.png" alt="A black circle with two obtuse triangles inscribed inside it."/>
 	<a class ="active" href="index.html">About</a>
-	<a href="writing.html">Writing</a>
-	<a href="papers.html">Academics</a>
+	<a href="resources.html">Resources</a>
+	<a href="classes.html">Classes</a>
 </div>
 
 
 <div class = "row">
 	<div class = "col-3">
-	<img class="profile"  src ="images/profile.jpg" alt ="A picture of my face, taken in September 2022."/>
+	<img class="profile"  src ="images/profile.jpg" alt ="A picture of my face, taken in September 2022. I am white. I have thick, black eyebrows
+a prominant nose. I am facing the camera and smiling. I am in a well-lit, forrested area during the middle of the day. I am wearing thin-rimmed, semi-rectangular glasses.
+My hair is long, bleached at the ends, and spills across my shoulder down to my stomach. My eyes are a dark brown."/>
 </br>
-<a href ="documents/resume_new.pdf">Current Resume</a>
-
 	</div>
+		<div class="container">
+			<button onclick="setDiv(1)"><h4>Welcome!</h4></button>
+			<button onclick="setDiv(2)"><h4>Philosophy</h4></button>
+			<button onclick="setDiv(3)"><h4>Experience</h4></button>
+			<button onclick="setDiv(4)"><h4>Who I am </h3></button>
+		</div>
+		<div>
+			<div class = "slide">
+				<h2>Hello and Welcome!</h2>
+				<p> I am Teacher Bardessono, and here you will find information about myself, my <a href="classes.html">classes</a>, and some of the teaching <a href="resources.html">resources</a>
+				I have gathered through my time as an educator. Each topic has its own page, and if you are a student in one of my classes I will have specific resources posted on each classroom page.
+				I maintain this webpage myself, so it's a constant work in progess. That said, if you notice any critical errors feel free to reach out!
+				</p>
+			</div>
+				
+			<div class = "slide">
+				<h2>Philosophy</h2>
+				<p>I believe that education should be an empowering and that learning should be gratifying. I want all my students to be able to explore 
+				science in meaningful and relevant ways, and approach the problems they face in and out of the classroom with curiosity and confidence. 
+				To this end, I understand that the science classroom is much more than the theories discussed within, it is driven by the relationships 
+				between students and teacher. I want my classrooms to feel like a home space, where students are able to express themselves genuinely and 
+				can trust me and each other to listen to what they have to say. When students and teachers trust each other, the exploration of the natural 
+				world and deep science concepts becomes enlightening, not mystifying, and students learn to approach difficult problems with confidence.
+				</p>
+				<p>I regard the practice of pedagogy in the same manner I regard the practice of science; in that it is an active process and never a finished product.
+				I am always keeping my students in mind as I adapt lessons to the specific tone of each class I teach. I am constantly working to understand and redress
+				the barriers that keep students from succeeding, whether that be at home, in school, or in my classroom. To that end, I am constantly working to make the
+				classrooms I occupy accepting and validating so that students may grow as burgeoning adults and lifelong learners.
+				</p>
+			</div>
+			
+			<div class = "slide">
+				<h2>Experience</h2>
+				
+				<a href = "documents/LOI_anthony_bardessono.pdf" target = "_blank"><h3>Teaching Credential (Sonoma State)</h3></a>
+				
+				<p>I have over five years working with and helping to educate students at the high school and middle school levels; I have worked on and off as a math tutor since 
+				I graduated from <a href="https://www.calpoly.edu/">California Polytechnic State University</a>  in 2016, and I worked for three years as a camp instructor at a 
+				<a href ="http://www.astrocampva.com/"> AstroCamp, VA</a>, where I had the opportunity to provide for campers with a wide range of interests and needs. I have a great 
+				deal of experience developing curriculum for and presenting science concepts to a large range of learners, from 4th grade up through high school. After my experience 
+				working there, I decided to become a teacher, and in 2022 I graduated from Sonoma State University with credentials in physics and chemistry.
+				</p>
+				
+				<p>During my time in the program working as a student teacher, I had the chance to work and teach in both physics and chemistry classes, as well as participate occasionally
+				in a smattering of other subjects such as biology, mathematics, and computer science. Throughout all my experiences, I have found myself to be patient and curious in my
+				teaching—watching students find insight and moments of revelation as they grapple with science concepts has been a repeated joy throughout my career, and I am always
+				looking for new ways to help students make those connections as they engage with science and the natural world.
+				</p>
+	
+		
+				<h3>Academic Projects and Papers (Cal Poly, SLO)</h3>
+				<ul>
+					<li class="roman"><a href = "documents/sp.pdf" target = "_blank">Black Holes Modeled as Fluid Droplets on Membranes</a> (Author, Programmer)</li>
+					<li class="roman"><a href = "documents/polymer.pdf" target = "_blank">Analysis of Polymer Solar Cells</a> (Author)</li>
+					<li class="roman"><a href = "documents/mcm2016.pdf" target = "_blank">MCM 2016 - Distribution of Grant Money</a> (Co-Author)</li>
+					<li class="roman"><a href = "documents/mcm2015.pdf" target = "_blank">MCM 2015 - Ebola Outbreak</a> (Co-Author, Programmer)</li>
+				</ul>
 
-	<div class = "col-9">
-		<h1>Welcome!</h1>
-		<p> My name is Anthony Bardessono. I am a graduate of both <a href="https://www.calpoly.edu/">California Polytechnic State University</a> and Sonoma State University.	At Cal Poly I received 
-a bachelors in physics and a minor in mathematics, and at SSU I recieved a credential for teaching Secondary Science in Physics and Chemistry. Before achieving my credential, I
-had worked in educational settings with children for over five years. I also  have experience usign coding languages such as LaTeX, Mathematica, MatLab, and the Godot Engine. I
-worked on several mathematical modeling <a href="papers.html">projects</a> during my time at Cal Poly and
-have experience with a variety of laboratory instrumentation. I am also a self-published author.</p>
+				<p>All four papers were written using LaTeX. The first link is my senior project thesis. The second is an anlysis of solar cell 
+				performance, written as the final report of an upper-division lab I took at Cal Poly. The latter two were submitted as entries for the international
+				<a href = "https://www.comap.com/undergraduate/contests/mcm/" target = "_blank"> Mathematical Modeling Competition</a>. My team recived an Honorable Mention (top 40%) for
+				our 2015 entry and a Meritorious (top 8%) for our 2016 entry. I did all of the coding needed in the first and fourth paper, and also produced all the graphics therein (unless otherwise sourced).</p> 
+				
+			</div>
+			
+			<div class = "slide">
+				<h2>Integra</h2>
+				<p>My name is Integra Bardessono; I also go by Anthony. I am a native resident of Napa and am excited by the prospect of giving back to my community as a teacher,
+				as well as continuing to provide opportunities for students to learn and practice science in a safe and caring environment.In my free time I enjoy swimming, video games, 
+				and a lot of reading and writing. I have self-published a science fiction <a href="https://www.amazon.com/Thalci-Varner-Red-Children-Paradise-ebook/dp/B079RY1LFZ/">novel</a> online, and occasionally write 
+				<a href="https://bloggishbabble.blogspot.com/">reviews</a> of the books I read as well as other media.
+				</p>
+		
+			
+				<p>I can be reached via <a href="mailto:AntBardessono@Gmail.com">Email</a>.
+				</p>
+				
+				<p><a href ="documents/resume_new.pdf">Current Resume</a>
+				</p>
+				</br>
+				<a href ="documents/resume_anthony_bardessono.doc">Academic Resume</a>
+			</div>
+			
+		</div>
+</div>
 
-		<p>I have tutored mathematics and physics on and off since 2012, teaching middle-, high-school, and freshman college students in one-on-one sessions. I tutored independantly,
-		as well as through SurferMath and <a href="https://locations.sylvanlearning.com/us/napa-valley-ca/">Sylvan Tutoring</a>.</p>
 
-		<p> After my undergraduate studies, I worked as an instructor at <a href ="http://www.astrocampva.com/"> AstroCamp, VA</a>, where I helped teach students about a variety of science topics.
-		In addition to managing small classess, I helped develop many programs for the burgeoning camp and created a variety of documentation including instruction manuals, learning aids, and lesson plans.
-I also gained experince in building and maintaining a variety of circuitry, including a set of ANET A8 3D printers.</p>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-		</p>Currently I am looking to apply my teaching credential and looking for work in California, ideally near the Bay Area.</p>
+function setDiv(n) {
+	slideIndex = n;
+	showDivs();
+}
 
-		<p>I also do a lot of reading and writing. I have published a science fiction <a href="writing.html">novel</a> through Amazon (sequel in the works).
-And I have a <a href="https://bloggishbabble.blogspot.com/">blog</a> where I post my thoughts and recommendations about the books I read; though I have not had time to update the blog as of late.</p>
-
-		<p>I can be reached via <a href="mailto:AntBardessono@Gmail.com">Email</a>.
-</p>
-
-	</div>
-<div>
-
+function showDivs() {
+	var i;
+	var x = document.getElementsByClassName("slide");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	x[slideIndex-1].style.display = "block";
+}
+</script>
 
 </body>
 </html>
