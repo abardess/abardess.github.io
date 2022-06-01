@@ -16,70 +16,72 @@
 <body>
 
 <div class="container">
-	<img class="icon" src="images/icon.png" alt="A black circle with two obtuse triangles inscribed inside it."/>
-	<a href="index.html">About</a>
-	<a class ="active" href="resources.html">Resources</a>
-	<a href="classes.html">Classes</a>
+	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
+	<div>Teacher Bardessono</div>
+	<a href="index.html">About my Teaching</a>
+	<a class ="active" href="resources.html">Educational Resources</a>
+	<a href="classes.html">My Classes</a>
 </div>
 
-<div class = "row">
-	<div>
+<div>
 	<h2>Student Work</h2>
-	
-	TBD
-	
-	<h2>Sample Lessons</h2>
-	<div>
-		<button onclick="openPDF(0)"><h4>Camera Lenses</h4></button>
-		<button onclick="openPDF(1)"><h4>Reading on Waves</h4></button>
-		<button onclick="openPDF(2)"><h4>Waves on Slinky Inquiry</h4></button>
-		<button onclick="openPDF(3)"><h4>Waves Unit Final Project</h3></button>
-	</div>
-	
-	
-	<div class = "slide">
-		Two shorter inquiry activities into the basics of how lenses work. With some great artistic opportunities!
-	</div>
-	
-	<div class = "slide">
-		A reading I gave at the start of our unit on waves in a physics class. Students annotated and used it as references as we did further inquiries.
-	</div>
-	
-	<div class = "slide">
-		Another inquiry activity, this time on making measurements of basic wave behavior on slinkies.
-	</div>
-	
-	<div class = "slide">
-		The final project I assigned to my students during my student teaching. They built research projects about a specific technology that uses waves.
-		(Fufills NGSS <a href = "https://www.nextgenscience.org/pe/hs-ps4-5-waves-and-their-applications-technologies-information-transfer">HS-PS4-5</a>)
-	</div>
-	
-	
-	
-	
-	<div class = "viewer">
-		<object
-			id = "pdf_view1"
-			data = "documents/phones_inquiry.pdf"
-			type = "application/pdf"
-			width = "600px"
-			height = "600px"
-		>
-			<iframe
-				id = "pdf_view2"
-				src = "documents/phones_inquiry.pdf"
-				width = "500px"
-				height = "800px"
-			>
-		
-			</iframe>
-		</object>
-	</div>
-	
-	</div>
-	
-</div>
 
+	TBD
+</div>	
+
+<h2>Sample Lessons</h2>
+	<div class="grid-container2">
+		
+		<ul class = "buttons">
+			<li><button class="button2" onclick="openPDF(0)"><h4>Camera Lenses</h4></button></li>
+			<li><button class="button2" onclick="openPDF(1)"><h4>Reading on Waves</h4></button></li>
+			<li><button class="button2" onclick="openPDF(2)"><h4>Waves on Slinky Inquiry</h4></button></li>
+			<li><button class="button2" onclick="openPDF(3)"><h4>Final Project Waves Unit</h3></button></li>
+		</ul>
+		
+		<div>
+			<object class = "viewer"
+				id = "pdf_view1"
+				data = "documents/phones_inquiry.pdf"
+				type = "application/pdf"
+				width = "600px"
+				height = "600px"
+			>
+				<iframe
+					id = "pdf_view2"
+					src = "documents/phones_inquiry.pdf"
+					width = "500px"
+					height = "800px"
+				>
+				
+				</iframe>
+			</object>
+		</div>
+		
+		<div class = "commentary">
+			<div class = "slide">
+			<h2>Cameras & Cellphone Lenses</h2>
+				Two shorter inquiry activities into the basics of how lenses work. With some great artistic opportunities!
+			</div>
+			
+			<div class = "slide">
+			<h2>A Reading on Mechanical Waves</h2>
+				A reading I gave at the start of our unit on waves in a physics class. Students annotated and used it as references as we did further inquiries.
+			</div>
+			
+			<div class = "slide">
+			<h2>Inquiry: Waves on a Slinky</h2>
+				Another inquiry activity, this time on making measurements of basic wave behavior on slinkies.
+			</div>
+			
+			<div class = "slide">
+			<h2>Waves & Technology Research Project</h2>
+				The final project I assigned to my students during my student teaching. They built research projects about a specific technology that uses waves.
+				(Meets NGSS <a href = "https://www.nextgenscience.org/pe/hs-ps4-5-waves-and-their-applications-technologies-information-transfer">HS-PS4-5</a>)
+			</div>
+		</div>
+	
+	</div>
 
 
 <script>
