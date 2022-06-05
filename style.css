@@ -15,13 +15,13 @@ body {
 		font-size: 16px;
 	}
 	
-	.container {
+	div.container {
 		color: black;
 		overflow: hidden;
 		background-color: #ECE09D;
 	}
 	
-	.container a {
+	div.container a {
 		font-family: Courier New, monospace;
 		font-size: 12px;
 		text-align: center;
@@ -31,7 +31,7 @@ body {
 		border-left: 0px solid white;
 	}
 
-	.container div {
+	div.container div {
 		font-family: Courier New, monospace;
 		font-style: italic;
 		font-size: 16px;
@@ -49,13 +49,13 @@ body {
 		display: none;
 	}
 	
-	.grid-container {
+	div.grid-container {
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: auto auto auto;
 	}
 	
-	.grid-container2 {
+	div.grid-container2 {
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: auto auto auto;
