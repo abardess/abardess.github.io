@@ -9,20 +9,30 @@ body {
 	color: black;
 }
 
-@media only screen and (max-width: 768px) {
-	[class*="col-"] {
-	width: 100%
-	}
-}
-
-@media only screen and (orientation: landscape) {
-		[class*="col-"] {
-		float: left;
-		padding: 15px;
-	}
-}
 
 @media only screen and (max-width: 600px) {
+	.container a {
+		font-family: Courier New, monospace;
+		font-size: 12px;
+		text-align: center;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.container div {
+		font-family: Courier New, monospace;
+		font-style: italic;
+		font-size: 16px;
+		font-weight: 600;
+		text-align: center;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.container img {
+		display: none;
+	}
+	
 	img.profile {
 		display: none;
 	}
@@ -30,6 +40,28 @@ body {
 	img.cover {
 		display: none;
 	}
+	
+	.grid-container {
+		display: grid;
+		grid-template-rows: auto auto auto;
+	}
+	
+	.grid-container2 {
+		display: grid;
+		grid-template-rows: auto auto auto;
+		gap: 25px;
+		padding: 0px 10px 0px 10px;
+	}
+	.viewer {
+		width: 300px;
+		height: 400px;
+	}
+	
+	#pdf_view2 {
+		width: 300px;
+		height: 400px;
+	}
+	
 }
 
 div.gallery {
@@ -189,6 +221,8 @@ h4 {
 	border: 2px solid #1f3e5a;
 	border-radius: 5px;
 	margin-top: 10px;
+	width: 600px;
+	height: 300px;
 }
 
 .wrapper {
