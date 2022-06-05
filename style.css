@@ -9,10 +9,6 @@ body {
 	color: black;
 }
 
-h4 {
-	text-align: center;
-}
-
 @media only screen and (max-width: 768px) {
 	[class*="col-"] {
 	width: 100%
@@ -43,6 +39,7 @@ div.gallery {
 	padding: 5px;
 	margin: 5px;
 	border: 5px solid #ccc;
+	background-color: #FFFDD0;
 
 }
 
@@ -58,6 +55,10 @@ div.gallery img {
 
 div.desc {
 	padding: 15px;
+	text-align: center;
+}
+
+h4 {
 	text-align: center;
 }
 
