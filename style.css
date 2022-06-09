@@ -16,12 +16,14 @@ body {
 	}
 	
 	div.container {
+		position: fixed;
 		color: black;
 		overflow: hidden;
 		background-color: #ECE09D;
 	}
 	
 	div.container a {
+		float: none;
 		font-family: Courier New, monospace;
 		font-size: 12px;
 		text-align: center;
@@ -32,6 +34,7 @@ body {
 	}
 
 	div.container div {
+		float: none;
 		font-family: Courier New, monospace;
 		font-style: italic;
 		font-size: 16px;
