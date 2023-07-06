@@ -15,30 +15,45 @@
 
 <body>
 
-<div class="container">
-	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
-	<div>Teacher Bardessono</div>
-	<a href="index.html">About my Teaching</a>
-	<a class ="active" href="resources.html">Educational Resources</a>
-	<a href="classes.html">My Classes</a>
-	<a href="support.html">How to Support my Classroom</a>
+<div id = "mySidenav" class="sidenav">
+	<div>
+		<a id = "mobile" class="closebtn" href="javascript:void(0)" onclick="closeNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></a>
+	</div>
+	<ul>
+		<li><a href="index.html">About Me</a></li>
+		<li class="active"><a class="active" href="resources.html">Educational Resources</a><li>
+		<li><a href="classes.html">My Classes</a><li>
+		<li><a href="support.html">Support my Classroom</a><li>
+	<ul>
 </div>
 
-<div>
-	<h2>Student Work</h2>
+<div id = "mobileHeader" class = "mobile">
+	<span id = "mobile" class = "mobile" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></span>
+	<h4> &larr; Click on the icon for the navigation menu!<h4>
+</div>
 
+<div id = "header" class="container">
+	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
+	<div>Teacher Bardessono</div>
+	<a href="index.html">About Me</a>
+	<a class ="active" href="resources.html">Educational Resources</a>
+	<a href="classes.html">My Classes</a>
+	<a href="support.html">Support my Classroom</a>
+</div>
+
+
+<div id="padRes" class = "padRes">
+	<h2 >Student Work</h2>
 	<a href = "gallery_2022.html">Final Projects (2022)</a>
-	
 </div>	
 
 <h2>Lesson Samples</h2>
 	<div class="grid-container2">
-		
-		<ul class = "buttons">
-			<li><button class="button2" onclick="openPDF(0)"><h4>Camera Lenses</h4></button></li>
-			<li><button class="button2" onclick="openPDF(1)"><h4>Reading on Waves</h4></button></li>
-			<li><button class="button2" onclick="openPDF(2)"><h4>Waves on Slinky Inquiry</h4></button></li>
-			<li><button class="button2" onclick="openPDF(3)"><h4>Final Project Waves Unit</h3></button></li>
+		<ul id="buttons" class = "buttons">
+			<li><button id="button2" class="button2" onclick="openPDF(0)"><h4>Camera Lenses</h4></button></li>
+			<li><button id="button2" class="button2" onclick="openPDF(1)"><h4>Reading on Waves</h4></button></li>
+			<li><button id="button2" class="button2" onclick="openPDF(2)"><h4>Waves on Slinky Inquiry</h4></button></li>
+			<li><button id="button2" class="button2" onclick="openPDF(3)"><h4>Final Project Waves Unit</h3></button></li>
 		</ul>
 		
 		<div>
@@ -50,7 +65,7 @@
 				<iframe
 					id = "pdf_view2"
 					src = "documents/phones_inquiry.pdf"
-					width = "500px"
+					width = "400px"
 					height = "800px"
 				>
 				
@@ -88,7 +103,6 @@
 <p><a href="https://drive.google.com/drive/u/0/folders/1pUI2syZGcDrMx5wawoUsVtSAwhjgTXrf"  target="_blank">This document</a> will serve as a compilation of
 lesson plans/activities/curricula I have developed/modified/used until I build more infrastructure on this page.</p>
 
-
 <script>
 var doc_list = ["documents/phones_inquiry.pdf", "documents/waves_anatomy.pdf", "documents/waves_inquiry.pdf", "documents/waves_final.pdf"];
 openPDF(0);
@@ -107,6 +121,16 @@ function showDiv(n) {
 	}
 	x[n-1].style.display = "block";
 }
+
+
+function openNav() {
+	document.getElementById("mySidenav").style.width="150px";
+}
+
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+
 
 
 </script>

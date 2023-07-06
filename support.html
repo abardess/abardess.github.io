@@ -15,16 +15,36 @@
 
 <body>
 
-<div class="container">
+<div id = "mySidenav" class="sidenav">
+	<div>
+		<a id = "mobile" class="closebtn" href="javascript:void(0)" onclick="closeNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></a>
+	</div>
+	<ul>
+		<li><a href="index.html">About Me</a></li>
+		<li><a href="resources.html">Educational Resources</a><li>
+		<li ><a href="classes.html">My Classes</a><li>
+		<li class ="active"><a class ="active" href="support.html">Support my Classroom</a><li>
+	<ul>
+</div>
+
+<div id = "mobileHeader" class = "mobile">
+	<span id = "mobile" class = "mobile" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></span>
+	<h4> &larr; Click on the icon for the navigation menu!<h4>
+</div>
+
+<div id = "header" class="container">
 	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
 	<div>Teacher Bardessono</div>
-	<a href="index.html">About my Teaching</a>
+	<a href="index.html">About Me</a>
 	<a href="resources.html">Educational Resources</a>
 	<a href="classes.html">My Classes</a>
-	<a class ="active" href="support.html">How to Support my Classroom</a>
+	<a class ="active" href="support.html">Support my Classroom</a>
 </div>
-<h1>What will I take as Donations?</h1>
-<div class="grid-container3">
+<div id="padRes" class = "padRes">
+	<h1>Able to make Donations? Please do!</h1>
+</div>
+
+<div id="grid-container3" class="grid-container3">
 	<div>
 	<h2><a href = "https://www.amazon.com/hz/wishlist/ls/3ICMOT6Y1QN8C?ref_=wl_share"  target="_blank">Amazon Wishlist </a></h2>
 		<p>As I'm sure most are aware, teachers are always in need of more resources to support their teaching.
@@ -43,5 +63,18 @@
 		I will try to keep it updated as I fill up or run low on specific supplies.</p>
 	</div>
 	
+	
+	
+<script>
+function openNav() {
+	document.getElementById("mySidenav").style.width="150px";
+}
+
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+
 </body>
 </html>

@@ -14,19 +14,36 @@
 
 <body>
 
-<div class="container">
-	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
-	<div>Teacher Bardessono</div>
-	<a href="index.html">About my Teaching</a>
-	<a href="resources.html">Educational Resources</a>
-	<a class ="active" href="classes.html">My Classes</a>
-	<a href="support.html">How to Support my Classroom</a>
+<div id = "mySidenav" class="sidenav">
+	<div>
+		<a id = "mobile" class="closebtn" href="javascript:void(0)" onclick="closeNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></a>
+	</div>
+	<ul>
+		<li><a href="index.html">About Me</a></li>
+		<li><a href="resources.html">Educational Resources</a><li>
+		<li class ="active" ><a class="active" href="classes.html">My Classes</a><li>
+		<li><a href="support.html">Support my Classroom</a><li>
+	<ul>
 </div>
 
-<p>These are the subjects I am currently teaching at Napa High.</p>
-<div class="grid-container3">
-	<div>
+<div id = "mobileHeader" class = "mobile">
+	<span id = "mobile" class = "mobile" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></span>
+	<h4> &larr; Click on the icon for the navigation menu!<h4>
+</div>
 
+<div id = "header" class="container">
+	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
+	<div>Teacher Bardessono</div>
+	<a href="index.html">About Me</a>
+	<a href="resources.html">Educational Resources</a>
+	<a class ="active" href="classes.html">My Classes</a>
+	<a href="support.html">Support my Classroom</a>
+</div>
+<div id="padRes" class = "padRes">
+<p>These are the subjects I am currently teaching at Napa High.</p>
+</div>
+<div id="grid-container3" class="grid-container3">
+	<div>
 		<h2>P Chemistry (SC350)</h2>
  
 		<p>This class serves as an introduction to the physical sciences and the basics of chemisty.
@@ -51,5 +68,17 @@
 	</div>
 </div>
 
+<script>
+function openNav() {
+	document.getElementById("mySidenav").style.width="150px";
+}
+
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+</script>
 </body>
 </html>
