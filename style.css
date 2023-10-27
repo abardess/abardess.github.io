@@ -318,6 +318,22 @@ div.desc {
     overflow: hidden;
 }
 
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color: #B995A1;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-height: 75px;
+	margin-top: 2px;
+}
+
+
+.footer-comp {
+	height: window.screen.height;
+}
 
 div.gallery {
 	display: grid;
@@ -344,7 +360,7 @@ div.gallery img {
 	display: grid;
 	grid-template-columns: 25% 10% auto;
 	gap: 25px;
-	padding: 0px 10px 0px 10px;
+	padding: 0px 10px 75px 10px;
 }
 
 .grid-container2 {
@@ -361,6 +377,27 @@ div.gallery img {
 	padding: 0px 10px 0px 10px;
 }
 
+.grid-container4 {
+	display: grid;
+	grid-template-columns: 18% 10% auto;
+	gap: 25px;
+	padding: 0px 10px 75px 10px;
+}
+
+.makerdiv {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 10px;
+	padding: 0px 0px 0px 0px;
+	float: right;
+	margin: -20px 0px 0px 0px;
+}
+
+.makerspace {
+	max-height: 250px;
+	margin: 0px;
+	padding: 0px;
+}
 
 .row::after {
 	content: "";
@@ -407,6 +444,15 @@ div.gallery img {
 	list-style-type: none;
 }
 
+
+img.maker {
+	border-radius: 12px;
+	min-width: 50px;
+	max-width: 300px;
+	height: auto;
+	margin: 60px 10px 10px 5px;
+	border: 0px;
+}
 
 img.profile {
 	border-radius: 12px;
