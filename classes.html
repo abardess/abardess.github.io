@@ -20,8 +20,7 @@
 	</div>
 	<ul>
 		<li><a href="index.html">About Me</a></li>
-		<li><a href="resources.html">Educational Resources</a><li>
-		<li class ="active" ><a class="active" href="classes.html">My Classes</a><li>
+		<li class ="active" ><a class="active" href="classes.html">My Classes & Resources</a><li>
 		<li><a href="maker.html">MAKER & Me</a><li>
 	<ul>
 </div>
@@ -35,64 +34,96 @@
 	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
 	<div>Teacher Bardessono</div>
 	<a href="index.html">About Me</a>
-	<a href="resources.html">Educational Resources</a>
-	<a class ="active" href="classes.html">My Classes</a>
+	<a class ="active" href="classes.html">My Classes & Resources</a>
 	<a href="maker.html">MAKER & Me</a>
 </div>
 <div id="padRes" class = "padRes">
-<h1>These are the subjects I am currently teaching at Napa High:</h1>
+<h1>This page contains the subjects I teach or have taught in the past!</h1>
 </div>
 <div id="grid-container3" class="grid-container3">
 	<div>
-		<h2>P Chemistry (SC350)</h2>
- 
-		<p>This class serves as an introduction to the physical sciences and the basics of chemisty.
-		Broadly, the big ideas we cover as the conservation of energy and matter, the atomic structure of matter, the dynamics of chemical reactions, 
-		and how these chemical and physical processes shape the dynamics of the Earth's various systems.</p>
-		<p>In this class, I teach students how to plan and carry out experiments in our lab space, how to gather and interpret data, and how to be responisble and communicative scientists. We use
-		these practices as we explore the big ideas of the class and learn about what the world around us is made of, and how its pieces behave.</p>
-
+		<h4 id = "click" class = "click">Here's what I teach!</h4>
+		<ul id = "buttons" class = "buttons">
+			<li><button id="button" class="button" onclick="setDiv(1)"><h4>P 	Chemistry</h4></button></li>
+			<li><button id="button" class="button" onclick="setDiv(2)"><h4>AP CS Principles</h4></button></li>
+			<li><button id="button" class="button" onclick="setDiv(3)"><h4>Physics Lessons</h4></button></li>
+		</ul>
 	</div>
+	
+	<div class = "content">
+		<div class = "grid-slide">
+			<div>
+				<h2>P Chemistry (SC350)</h2>
+	 
+				<p>This class serves as an introduction to the physical sciences and the basics of chemisty.
+				Broadly, the big ideas we cover as the conservation of energy and matter, the atomic structure of matter, the dynamics of chemical reactions, 
+				and how these chemical and physical processes shape the dynamics of the Earth's various systems.</p>
+				<p>In this class, I teach students how to plan and carry out experiments in our lab space, how to gather and interpret data, and how to be responisble and communicative scientists. We use
+				these practices as we explore the big ideas of the class and learn about what the world around us is made of, and how its pieces behave.</p>
+			</div>
+			<div>
+				<h2> Sample Lessons</h2>
+				LESSON EXAMPLES HERE
+			</div>
+		</div>
 
-	<div>
-		<h2>AP Computer Science Principles (MA214)</h2>
+		<div class = "grid-slide">
+			<div>
+				<h2>AP Computer Science Principles (MA214)</h2>
 
-		<p>Course Description: AP Computer Science Principles is a one-year, college level, non- calculus based introduction to the central ideas of Computer Science.
-		The course introduces students to the foundational concepts of computer science and challenges them to explore how computing and technology
-		can impact the world. The AP Program designed AP Computer Science Principles with the goal of creating leaders in computer science fields
-		and attracting and engaging those who are traditionally underrepresented with essential computing tools and multidisciplinary opportunities.
-		</p>
-		<p>
-		The curriculum for this class is taken primarily from <a href="https://studio.code.org/home">code.org</a>.
-		</p>
+				<p>Course Description: AP Computer Science Principles is a one-year, college level, non- calculus based introduction to the central ideas of Computer Science.
+				The course introduces students to the foundational concepts of computer science and challenges them to explore how computing and technology
+				can impact the world. The AP Program designed AP Computer Science Principles with the goal of creating leaders in computer science fields
+				and attracting and engaging those who are traditionally underrepresented with essential computing tools and multidisciplinary opportunities.
+				</p>
+				
+				<p> The curriculum for this class is taken primarily from <a href="https://studio.code.org/home" target = "_blank">code.org</a>, but I made several additions and adaptions.
+				On the right are a few of the lessons I have developed/adapted for this course.</p>
+				
+			</div>
+			<div>
+				<h2> Sample Lessons</h2>
+				<ul>
+					<li> <a href="https://docs.google.com/document/d/1qmtOL18bWi23KTtEoylP6r5WQhA3W3r4raLJGhQ-cO4/edit" target = "_blank">Drawing Dinosaurs Project</a> and intro <a href = "https://docs.google.com/presentation/d/1_hKbDdB4BPzLVekGjKEPZMrK2YXQqIhhRQW2v2cM7VM/edit#slide=id.g2579211844b_0_523" target = "_blank">Slides</a> 
+					- We used replit.com as the programming environment for this project. These types of 'turtle' projects are execellent introductions to coding in any language.</li>
+					<li><a href="https://docs.google.com/document/d/1xc4dUoppSWuc7z6AhxH2l1TPGi2ZTVHKL_1PJ9qkfFU/edit" target = "_blank">Programming a Text-Based RPG</a> - The final coding project for my class. Contains a rubric, planning guide, and intro/inquiry activity.</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class = "grid-slide">
+			<div>
+				<h2>Physics Lessons (Student Teaching)</h2>
+				<p>
+				The lessons in this section were created during my student teaching act Piner High School in Santa Rosa, from a unit on waves and optics.
+				</p>
+				<img class = "class-photo" src ="https://i.pinimg.com/originals/69/85/5e/69855ec955dafac4a0e3ab1931af58c1.gif" alt =""/>
+			</div>
+			<div>
+				<h2> Sample Lessons</h2>
+				<ul>
+					<li><a href="documents/phones_inquiry.pdf" target = "_blank">Invesitigating Camera Lenses</a> - Two shorter inquiry activities into the basics of how lenses work. With some great artistic opportunities! </li>
+					<li><a href="documents/waves_inquiry.pdf" target = "_blank">Investigating Waves on a Slinky</a>- Another inquiry activity, this time on making measurements of basic wave behavior on slinkies. </li>
+					<li><a href="documents/waves_anatomy.pdf" target = "_blank">Anatomy of a Wave</a> - A reading I gave at the start of our unit on waves in a physics class. Students annotated and used it as references as we made further inquiries. </li>
+					<li><a href="documents/waves_final.pdf" target = "_blank">Final Project: Waves and Technology</a> - Culmination of our waves unit. Aligns with NGSS <a href = "https://www.nextgenscience.org/pe/hs-ps4-5-waves-and-their-applications-technologies-information-transfer">HS-PS4-5</a></li>.
+				</ul>
+
+			</div>
+		</div>
+		
 	</div>
 </div>
 
-<div id="padRes" class = "padRes">
-	<h2>Able to make Donations? Please do!</h2>
-</div>
-
-<div id="grid-container3" class="grid-container3">
-	<div>
-	<h2><a href = "https://www.amazon.com/hz/wishlist/ls/3ICMOT6Y1QN8C?ref_=wl_share"  target="_blank">Amazon Wishlist </a></h2>
-		<p>As I'm sure most are aware, teachers are always in need of more resources to support their teaching.
-		I have made an amazon wishlist with items that will help me provide more for students, or which I want to help organize my classroom.
-		Do not feel you have to buy directly from amazon; I will gladly accept direct donations of these items as well.
-		You can <a href="mailto:integra_bardessono@nvusd.org">conatct me</a> or drop them off at the school's front office. </p>
-		<p>My classroom wishlist can be found <a href = "https://www.amazon.com/hz/wishlist/ls/3ICMOT6Y1QN8C?ref_=wl_share"  target="_blank">here</a>.</p>
-	</div>
-	<div>
-	<h2><a href="https://docs.google.com/document/d/15iWn86W5GRK3oeftDUSii6WWQdWC1xKwPFvTRKCect4/edit"  target="_blank">Maker Items</a></h2>
-		<p>I am in the process of creating a small <a href="https://www.makerspaces.com/what-is-a-makerspace/">Makerspace</a> in my room.
-	I already have a few activities planned to integrate into my teaching, and I would like to build up the resources to start expanding my curricula.
-	I want to bring out the more creative, crafty impulses of my students, and Making activies interate perfectly into that philosophy.</p>
-
-		<p><a href="https://docs.google.com/document/d/15iWn86W5GRK3oeftDUSii6WWQdWC1xKwPFvTRKCect4/edit" target="_blank">Here</a> is a list of items you can donate.
-		I will try to keep it updated as I fill up or run low on specific supplies.</p>
-	</div>
-</div>
 
 
+<h2>Full Archive of Lessons</h2>
+<p>(Under Construction)</p>
+<p><a href="https://drive.google.com/drive/u/0/folders/1pUI2syZGcDrMx5wawoUsVtSAwhjgTXrf"  target="_blank">This document</a> will serve as a compilation of
+lesson plans/activities/curricula I have developed/modified/used until I build more infrastructure on this page.</p>
+
+<h2>Teaching Literature</h2>
+<p>I read a lot to help improve my teaching. Below is a link to a log of all the relevant books, articles, etc. I have read so far, along with breif summaries and commentary. Most I can recommend, with a few exceptions.</p>
+<p><a href="https://docs.google.com/document/d/1rAnjbg3kuMMV8_D9c5s8H6P_5AuI649SQCWLaw6TtqI/edit" target="_blank">Log of Books Read & Summaries</a>
 
 <footer>
 	<p>Site Authored By: Integra Bardessono
@@ -135,6 +166,24 @@
 </footer>	
 
 <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function setDiv(n) {
+	slideIndex = n;
+	showDivs();
+}
+
+function showDivs() {
+	var i;
+	var x = document.getElementsByClassName("grid-slide");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	x[slideIndex-1].style.display = "grid";
+}
+
+
 function openNav() {
 	document.getElementById("mySidenav").style.width="150px";
 }
@@ -142,6 +191,7 @@ function openNav() {
 function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 }
+
 
 </script>
 </body>

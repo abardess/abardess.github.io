@@ -372,16 +372,28 @@ div.gallery img {
 
 .grid-container3 {
 	display: grid;
-	grid-template-columns: 40% 40%;
+	grid-template-columns: 15% 85%;
 	gap: 25px;
 	padding: 0px 10px 0px 10px;
 }
+
+.grid-container3 button {
+	font-size: 14px;
+}
+
 
 .grid-container4 {
 	display: grid;
 	grid-template-columns: 18% 10% auto;
 	gap: 25px;
 	padding: 0px 10px 75px 10px;
+}
+
+.grid-slide {
+	display: grid;
+	grid-template-columns: 50% 48% 2%;
+	gap: 25px;
+	padding: 0px 10px 0px 10px;
 }
 
 .makerdiv {
@@ -479,6 +491,15 @@ img.cover {
 	float: right;
 	border: 2px solid black;
 	margin: 10px 10px;
+}
+
+img.class-photo {
+	max-height: 200px;
+	max-width: 250px;
+	width: auto;
+	float: left;
+	padding: 0px 10px;
+	margin-top: 0px;
 }
 
 a:hover {
