@@ -214,6 +214,10 @@ h4 {
 	color: #EFEEF3;
 }
 
+.buffer {
+	padding-top: 75px;
+}
+
 .button {
 	background-color: #EFEEF3;
 	border: 2px solid #1f3e5a;
@@ -365,9 +369,9 @@ div.gallery img {
 
 .grid-container2 {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 33% 33% auto;
 	gap: 25px;
-	padding: 0px 10px 0px 10px;
+	padding: 0px 10px 75px 10px;
 }
 
 .grid-container3 {
@@ -430,10 +434,6 @@ div.gallery img {
 	color: blue;
 }
 
-.topper {
-	margin: 10px;
-}
-
 .viewer {
 	border: 2px solid #1f3e5a;
 	border-radius: 5px;
@@ -494,7 +494,7 @@ img.cover {
 }
 
 img.class-photo {
-	max-height: 200px;
+	max-height: 90px;
 	max-width: 250px;
 	width: auto;
 	float: left;
@@ -509,4 +509,83 @@ a:hover {
 ul {
 	list-style-type: none;
 	padding: 0px;
+}
+
+
+
+
+
+
+
+
+/* slieshow CSS */
+
+ {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 404px;
+  max-height: 537px;
+  position: relative;
+  margin: auto;
+  border-color: #A82548;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.active-slide, .dot:hover {
+  background-color: #717171;
 }

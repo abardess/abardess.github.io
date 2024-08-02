@@ -15,21 +15,39 @@
 
 <body>
 
-<div class="container">
+<div id = "mySidenav" class="sidenav">
+	<div>
+		<a id = "mobile" class="closebtn" href="javascript:void(0)" onclick="closeNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></a>
+	</div>
+	<ul>
+		<li class="active"><a class="active" href="">Gallery</a></li>
+		<li><a href="classes.html">Back to Classes & Resources</a><li>
+		<li><a href="maker.html">Home Page</a><li>
+	<ul>
+</div>
+
+<div id = "mobileHeader" class = "mobile">
+	<span id = "mobile" class = "mobile" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/></span>
+	<h4> &larr; Navigation menu!<h4>
+</div>
+
+<div id = "header" class="container">
 	<img class="icon" src="images/b.png" alt="A stylized orange captical letter B."/>
 	<div>Teacher Bardessono</div>
-	<a class ="active" href="">Gallery</a>
-	<a href="resources.html">Back to Resources</a>
+	<a class="active" href="">Gallery</a>
+	<a href="classes.html">Back to Classes & Resources</a>
 	<a href="index.html">Home Page</a>
 </div>
 
-<div class="topper">
-<h3>Final Projects 2022</h3>
-<p>The poster portion of our <a href="documents/waves_final.pdf">final project</a> from 2022, during my student teaching.
-	Students researched and explained how a specific technology works and uses waves to function. They chose their own topics and did all the poster design.
-	Lots of fantastic work here! I was overjoyed to recieve these!</p>
+<div class = "buffer">
+	<h3>Final Projects 2022</h3>
+	<p>The poster portion of our <a href="documents/waves_final.pdf">final project</a> from 2022, during my student teaching.
+		Students researched and explained how a specific technology works and uses waves to function. They chose their own topics and did all the poster design.
+		Lots of fantastic work here! I was overjoyed to recieve these!</p>
 </div>
+
 <h2>Fourth Period Physics</h2>
+
 <div class="gallery">
 	<a target="_blank" href="images/2022/1.jpg">
 		<img src ="images/2022/1.jpg" alt = "A picture of a science poser describing how an MRI machine works with diagrams of the technology"/>
